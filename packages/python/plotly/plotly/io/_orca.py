@@ -1406,6 +1406,7 @@ Install using conda:
 
                 # Build orca command list
                 cmd_list = status._props["executable_list"] + [
+                    "--no-sandbox",
                     "serve",
                     "-p",
                     str(orca_state["port"]),
